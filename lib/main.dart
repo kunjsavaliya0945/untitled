@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main()
-{
-  runApp(MaterialApp(home: Home(),));
+void main() {
+  runApp(MaterialApp(
+    home: Home(),
+  ));
 }
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -15,6 +17,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Data"),
+      ),
+    );
   }
 }
